@@ -1,11 +1,11 @@
-# MySQL example for Go
+# MySQL Example for Go
 
 This simple program shows how to use Go packages to
 work with a MySQL-database. The example features a database
 of papers with a single table. The code loads data from
 the database with a simple SELECT query with a WHERE clause.
 
-## Create database and user
+## Create Database and User
 
 First you will need to create the database, the user and link them together.
 I was running this on Linux:
@@ -29,7 +29,7 @@ Test it by trying to log in (from the bash console):
 mysql -usqlgo -p sqlgo
 ```
 
-## Create table
+## Create Table
 
 Before running the code, you will need to create the following table
 and add some data into it. The status value of some of the rows should be
@@ -45,7 +45,7 @@ CREATE TABLE papers (
 );
 ```
 
-## Insert data
+## Insert Test Data
 
 ```
 INSERT INTO papers (title, content, status) VALUES ('Клаун', 'Пока всем', 1);
